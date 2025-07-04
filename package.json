@@ -20,5 +20,10 @@
   "bugs": {
     "url": "https://github.com/jkuminga/my_planner/issues"
   },
-  "homepage": "https://github.com/jkuminga/my_planner#readme"
+  "homepage": "https://github.com/jkuminga/my_planner#readme",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.50.3",
+    "cors": "^2.8.5",
+    "express": "^5.1.0"
+  }
 }
