@@ -35,6 +35,14 @@ router.get('/new', (req, res)=>{
     routine.settle_routine(req, res);
 })
 
+router.patch('/result/settle', (req, res)=>{
+    routine.settle_routine(req, res);
+})
+
+router.delete('/result/settle', (req, res)=>{
+    routine.delete_old_routines(req, res);
+})
+
 cron.schedule('0 0 * * *', async () => {
     routine.settle_routine();
 })

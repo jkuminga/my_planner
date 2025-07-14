@@ -12,11 +12,14 @@ app.use(cors({
 
 const routineRouter = require('./routers/routineRouters');
 const todoRouter = require('./routers/todoRouters');
+const shoppingListRouter = require('./routers/shoppingListRouters');
+const waterRouters = require('./routers/waterRouters');
+
 // 라우터
 app.use('/routine', routineRouter);
 app.use('/todo', todoRouter); 
-
-
+app.use('/shopping', shoppingListRouter);
+app.use('/water', waterRouters);
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, ()=>{
