@@ -69,10 +69,12 @@ router.post('/todo', (req, res)=>{
     daily.createNewDailyTodo(req, res);
 })
 
+
 // 특정 날짜의 오늘 할 일 들고오기
 router.get('/todo/:date', (req, res)=>{
     daily.getSingleDayDailyTodo(req, res);
 })
+
 
 // 특정 오늘 할 일 아이템 수정
 router.patch('/todo/:todoId', (req, res)=>{

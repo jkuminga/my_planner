@@ -24,7 +24,7 @@ app.use('/water', waterRouters);
 
 app.get('/', (req, res)=>{
     const today = new Date();
-    const kst = new Date(today.getTime() + 9 * 60*60*1000);
+    const kst = new Date(today.getTime() + 33 * 60*60*1000);
 
     res.send(kst);
 })
